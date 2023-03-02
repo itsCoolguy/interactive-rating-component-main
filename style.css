@@ -1,0 +1,149 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121417;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rate-screen {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(37, 45, 55, 0.7);
+}
+
+#thank-you-screen {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: rgba(37, 45, 55, 0.7);
+}
+
+#rate-screen img {
+    padding: 10px;
+    background-color: #252d37;
+    border-radius: 50%;
+}
+
+#rating-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 25px 0px;
+}
+
+p {
+    color: white;
+    opacity: 50%;
+}
+
+#thank-you-screen img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#thank-you-screen p {
+    text-align: center;
+}
+
+#selected-rating {
+    margin: 30px 0px 40px 0px;
+    width: 100%;
+    height: 14px;
+}
+
+#selected-rating span {
+    color: #fb7413;
+    background-color: #252d37;
+    padding: 5px 20px 2px 20px;
+    border-radius: 100px;
+}
+
+#thank-you-screen h2 {
+    text-align: center;
+}
+
+#rating-buttons button {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    padding: 20px;
+    background-color: #252d37;
+    border: none;
+    border-radius: 50%;
+}
+
+#submit-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    color: white;
+    background-color: #fb7413;
+    border-radius: 100px;
+    letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+}
+
+button {
+    transition: all 200ms linear;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    color: #fb7413;
+    background-color: white;
+}
+
+#rating-buttons button:hover {
+    background-color: #959eac;
+    color: white;
+}
+
+#rating-buttons button:active {
+    color: red;
+}
+
+h2 {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 500px) {
+
+    #rate-screen {
+        width: 365px;
+    }
+
+    #thank-you-screen {
+        width: 365px;
+    }
+
+}
